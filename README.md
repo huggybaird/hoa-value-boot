@@ -57,23 +57,24 @@ This is an example of how you may give instructions on setting up your project l
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+1. JDK 1.8 [here](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+2. Spring Boot knowledge. see [getting started](https://spring.io/guides/gs/spring-boot/)
+3. Docker Desktop [here](https://www.docker.com/)
+4. Git Bash [here](https://gitforwindows.org/)
+5. MySQL [here](https://www.mysql.com/)
+6. Your favorite IDE. I use [eclipse](https://www.eclipse.org/), but feel free to get jiggy with VS Code or Intellij. have fun!
 
+OPTIONAL: grab the UI/website that uses this api [here](https://github.com/huggybaird/hoa-dashboard)
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/huggybaird/hoa-value-boot.git
 ```
-3. Install NPM packages
-```sh
-npm install
-```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
+2. Install the MySQL DDL scripts to create the database. The scripts are in the /src/database/* directory
+3. Rename /src/main/resources/application.properties.example to application.properties
+	a. Change the application.properties so it points to your MySQL connection. you'll need a user/password
 
 
 <!-- LICENSE -->
