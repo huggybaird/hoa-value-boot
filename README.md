@@ -48,7 +48,7 @@ This API stores data to a MySql database using JPA and JDBC.  The data includes 
 Here is a screenshot of our API:
 ![Image](src/readme/oas-screenshot.gif?raw=true)
 
-This project is just the api used for CRUD operations.  The website/UI is an located ![here](https://github.com/huggybaird/hoa-dashboard).
+This project is just the api used for CRUD operations.  The website/UI is an located [here](https://github.com/huggybaird/hoa-dashboard).
 
 <!-- GETTING STARTED -->
 ## Getting Started
