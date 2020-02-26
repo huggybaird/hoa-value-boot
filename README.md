@@ -89,5 +89,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Mike Baird - [@LinkedIn](https://www.linkedin.com/in/michael-baird-cfa-a02b881/) 
 
-Use our website "contact us": [https://hoavalue.com)
+Use our website "contact us": [hoavalue.com](https://hoavalue.com)
+
+Submit a question via [git issues](https://github.com/huggybaird/hoa-value-boot/labels/question)
 
