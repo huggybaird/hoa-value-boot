@@ -87,7 +87,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Mike Baird - [@your_twitter]https://www.linkedin.com/in/michael-baird-cfa-a02b881/) 
+Mike Baird - [@LinkedIn]{https://www.linkedin.com/in/michael-baird-cfa-a02b881/) 
 
 Use our website "contact us": [https://hoavalue.com)
 
