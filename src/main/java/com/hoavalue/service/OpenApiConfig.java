@@ -2,8 +2,7 @@ package com.hoavalue.service;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
+
 
 //import com.google.common.base.Predicate;
 //
@@ -23,8 +22,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
  
 
 @Configuration

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8080", "http://hoavalue.com" })
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8080", "http://hoavalue.com", "http://my.hoavalue.com", "https://my.hoavalue.com" })
 @RestController
 public class GreetingController {
 

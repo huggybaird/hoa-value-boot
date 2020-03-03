@@ -2,16 +2,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.hoavalue.springbootMaven</groupId>
-  <artifactId>first-springboot-project</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <groupId>com.hoavalue</groupId>
+  <artifactId>hoa-value-boot</artifactId>
+  <version>0.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>first-springboot-project</name>
-  <url>http://maven.apache.org</url>
+  <name>hoa-value-boot</name>
+  <url>http://hoavalue.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
   </properties>
 <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
@@ -103,6 +104,16 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-devtools</artifactId>
 	</dependency>
+
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-security</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>io.jsonwebtoken</groupId>
+		<artifactId>jjwt</artifactId>
+		<version>0.9.1</version>
+	</dependency>
   </dependencies>
   <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin -->
 	<build>
@@ -110,8 +121,20 @@
 			<plugin>
 			    <groupId>org.springframework.boot</groupId>
 			    <artifactId>spring-boot-maven-plugin</artifactId>
+		        <configuration>
+		            <mainClass>com.hoavalue.springboot.App</mainClass>
+		        </configuration>
+		        <executions>
+		          <execution>
+		            <id>repackage</id>
+		            <configuration>
+		              <classifier>exec</classifier>
+		            </configuration>
+		          </execution>
+		        </executions>
 			</plugin>
 		</plugins>
+		
 	</build> 
   
 </project>

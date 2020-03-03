@@ -1,14 +1,11 @@
 package com.hoavalue.service;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
-
-import com.hoavalue.service.*;
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8080", "http://hoavalue.com", "http://my.hoavalue.com", "https://my.hoavalue.com" })
 
 @RestController
 public class WelcomeController {
@@ -31,8 +28,13 @@ public class WelcomeController {
 	 
 	 @RequestMapping("/")
 	    public RedirectView index() { 
-	        return new RedirectView("/swagger-ui.html");
+	        return new RedirectView("/api/swagger-ui.html");
 	    }
+	 @RequestMapping("/api")
+	    public RedirectView api_index() { 
+	        return new RedirectView("/api/swagger-ui.html");
+	    }
+//	 
 //	 
 	//Auto wiring = spring creats bean and injects where needed
 	//@Autowired

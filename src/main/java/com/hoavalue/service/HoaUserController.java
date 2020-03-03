@@ -1,20 +1,13 @@
 package com.hoavalue.service;
 
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,17 +18,12 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 //import io.swagger.annotations.Api;
 //import io.swagger.annotations.ApiOperation;
 
-import io.swagger.v3.oas.models.Components;
-import io.swagger.v3.oas.models.OpenAPI;
-import io.swagger.v3.oas.models.info.Info;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
 import com.hoavalue.data.User;
 import com.hoavalue.data.HoaUserNotFoundException;
 
 
-@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8080", "http://hoavalue.com" })
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8080", "http://hoavalue.com", "http://my.hoavalue.com", "https://my.hoavalue.com" })
+
 @RestController
 @RequestMapping(path="/api/hoauser") // This means URL's start with /demo (after Application path)
 @Tag(name = "HOA User", description = "Operations to add, update, get, and delete users from a HOA")

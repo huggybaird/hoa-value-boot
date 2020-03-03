@@ -1,10 +1,5 @@
 package com.hoavalue.data;
  
-import java.io.FileReader;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.Statement;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,10 +7,7 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RestController;
-
 import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
